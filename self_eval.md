@@ -6,4 +6,4 @@
 
 - What is the power of using methods in our applications?
 
-    We can call custom made or ruby built methods to modify,reassign, or interpret data. We can apply these methods to endlessly changing data values, which will greatly save us time and tedious effort. Methods are essentially, in my opinion, what makes computing so powerful. 
+    We can call custom made or ruby built methods to modify,reassign, or interpret data. We can apply these methods to an endless amount of different data values, which will greatly save us time and tedious effort. Methods are essentially, in my opinion, what makes computing so powerful. 
