@@ -30,7 +30,7 @@ puts custom_greeting("Daniel")
 # The return value is "Hello #{name}"
 
 # How many arguments did you pass your method?
-# One. In my example above (Name) is the parameter and "Daniel" is the argument. 
+# One. In my example above (name) is the parameter and "Daniel" is the argument. 
 
 # What data type was your argument(s)?
 # A string. 
@@ -52,19 +52,48 @@ puts greet_person("Daniel","John","Sauer")
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
 # Bonus: Print a sentence that interpolates the return value of your square method.
+
+#method 1
 def square(number)
     number * number
 end
 
-puts square(4)
+number= 5
+puts "#{number} squared is #{square(number)}."
 
 # What is the return value of your method?
 # number * number is the return value.
+
 # How many arguments did you pass your method?
-# One. (number) is the parameter, and in my example above 4 is the argument.
+# One. (number) is the parameter, and in my example above 5 is the argument.
+# I think the first "number" in my puts statement is just a variable, or rather a variable reference.
+# I think this may be called a pointer? I don't think its an argument though since it just refernces a variable within the method and isn't actually calling it.
+
 # What data type was your argument(s)?
 # Integer. 
 
+#method 2 - I just want to play around with this some more and get the puts statement to print the return as a variable. 
+
+def square2(number2)
+    sq = number2 * number2
+    #the sq variable is redundent. Better to store return values from specific arguments instead. 
+end
+
+#square2(3)
+#puts sq
+# - I realize this doesn't work because we cannot permenently store a variable within a method and therefore cannot call upon it.
+# We need to declare variables outside of the method if we are to use them outside of the method. 
+
+sq5 = square2(5)
+sq6 = square2(6)
+puts sq5
+puts sq6
+
+# My variables and methods should not have similar names but I think I have a good feel for this. 
+
+number2 = 3 
+sqx = square2(number2)
+puts sqx
 
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
@@ -91,6 +120,7 @@ puts check_stock(1, "Salsa");
     
 
 def check_stock2(amount,thing)
+
 
     if amount >= 4
     "#{thing} is stocked."
