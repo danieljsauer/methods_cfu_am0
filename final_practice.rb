@@ -95,6 +95,15 @@ number2 = 3
 sqx = square2(number2)
 puts sqx
 
+#def square3(number3)
+ #   number3.square
+#end
+
+#number3 = 8
+#puts square3(number3)
+#I just wanted to see if you could use a method to define a method but it seems you cannot due that. I get a "private method/no method error"
+
+
 # 5: Write a method named check_stock that satisfies the following interaction pattern:
 # Hint: You will only write one check_stock method that checks the quantity and then prints the corresponding statement.
 
