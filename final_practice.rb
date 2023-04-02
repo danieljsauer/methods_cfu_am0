@@ -130,18 +130,14 @@ puts check_stock(1, "Salsa");
 
 def check_stock2(amount,thing)
 
-
-    if amount >= 4
-    "#{thing} is stocked."
-
-    elsif amount >=2
+    if amount < 4 && amount != 0
      "#{thing} is running low."
 
-    elsif amount == 1
-    "#{thing} is almost out!"
-
     elsif amount == 0
-    "#{thing} is OUT OF STOCK!"
+    "#{thing.upcase} IS OUT OF STOCK!"
+
+    else
+    "#{thing} is stocked."
     end
 
 end 
@@ -154,4 +150,4 @@ puts check_stock2(0, "Cheese");
 
 puts check_stock2(1, "Salsa");
 
-#I feel like there is a cleaner way to do this, but its good to know you can include an if statement in your method definition.
+#I feel good about this check_stock2 method. Looks clean and flexible. 
