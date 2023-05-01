@@ -93,10 +93,13 @@ dream = "in my dreams..."
 #In this case, the interger object of 50 with the variable denver_broncos has been converted to a string object of "50". Therefore the variable denver_broncos will now return "50" when called upon.
 #I have made an if statement to prove that the variable has been coverted into a string.
 
+
     denver_broncos = denver_broncos.to_s
     if denver_broncos == "50"
         puts "Variable is now a string"
     end 
+#Note this change into a string is permenant. 
+    puts denver_broncos.reverse
 
 #The .pred method is called upon the variable kc_chiefs which has been assigned the integer object of 3.
 #the .pred method will return the number that came before the current integer value, essenitally integer - 1.
@@ -122,5 +125,9 @@ puts favorite_colors.rotate!
 #The .delete method is called upon the variable favorite_nums which is an integer array.
 #The delete method will delete the argued integer from the variable. 
 #In this example the argued value of 56 is deleted from the array. favorite_nums will now return an array that does not include the integer of 56. 
+favorite_nums.delete_at(3)
+puts favorite_nums
+#I added the delete at method to learn a new way of doing this. 
+
 favorite_nums.delete(56)
 puts favorite_nums
