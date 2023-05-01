@@ -32,7 +32,7 @@ puts custom_greeting("Daniel")
 # How many arguments did you pass your method?
 # One. In my example above (name) is the parameter and "Daniel" is the argument. 
 
-# What data type was your argument(s)?
+# What data type was your argument(s)?  
 # A string. 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
@@ -151,3 +151,4 @@ puts check_stock2(0, "Cheese");
 puts check_stock2(1, "Salsa");
 
 #I feel good about this check_stock2 method. Looks clean and flexible. 
+#Could we put this into an array? Then we wouldn't need to run multiple prints statements. Hmmm. 
